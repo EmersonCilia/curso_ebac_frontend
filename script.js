@@ -11,11 +11,11 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
 
     switch (true) {
         case num2 > num1:
-            resultDiv.innerText = `O primeiro número (${num2}) é maior que o segundo número (${num1}).`;
+            resultDiv.innerText = `O segundo número (${num2}) é maior que o primeiro número (${num1}).`;
             resultDiv.hidden = false;
             break;
         case num2 < num1:
-            errorDiv.innerText = `O segundo número (${num2}) é maior que o primeiro número (${num1}), o primero número deve ser maior que o segundo.`;
+            errorDiv.innerText = `O primeiro número (${num2}) é maior que o segundo número (${num1}), o primero número deve ser maior que o segundo.`;
             errorDiv.hidden = false;
             break;
         case num1 === num2:
