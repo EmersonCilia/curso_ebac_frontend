@@ -15,11 +15,11 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
             resultDiv.hidden = false;
             break;
         case num2 < num1:
-            errorDiv.innerText = `O segundo número (${num2}) é menor que o primeiro número (${num1}), o primero número deve ser maior que o segundo.`;
+            errorDiv.innerText = `O segundo número (${num2}) é menor que o primeiro número (${num1}), o segundo número deve ser maior que o primeiro.`;
             errorDiv.hidden = false;
             break;
         case num1 === num2:
-            errorDiv.innerText = `Os dois números são iguais, o primero número deve ser maior que o segundo.`;
+            errorDiv.innerText = `Os dois números são iguais, o segundo número deve ser maior que o primeiro.`;
             errorDiv.hidden = false;
             break;
     }
