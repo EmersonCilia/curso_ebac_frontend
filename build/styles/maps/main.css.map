@@ -1,0 +1,1 @@
+{"version":3,"sources":["data:;charset=utf-8,body%7B%0D%0A%20%20%20%20background-color:%20rgb(51,%20218,%20168);%0D%0A%7D"],"names":[],"mappings":"AAAA;EACI","sourcesContent":["body{\r\n    background-color: rgb(51, 218, 168);\r\n}"],"file":"../main.css"}
