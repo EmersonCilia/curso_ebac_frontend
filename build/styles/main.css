@@ -1,0 +1,134 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+header {
+  background: #1a1a1a;
+  padding: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+  header .container {
+    width: 68%;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+  header .container {
+    width: 90%;
+  }
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .branding img {
+  max-height: 70px;
+}
+header nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 24px;
+}
+header nav .menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header nav .menu li a:hover {
+  color: #2ecc71;
+}
+section {
+  padding: 2rem 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
+  section .container {
+    width: 68%;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
+  section .container {
+    width: 90%;
+  }
+}
+section h2 {
+  text-align: center;
+  color: #3498db;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.products .product-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 20%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products .product-item {
+    max-width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .products .product-item {
+    max-width: none;
+  }
+}
+.products .product-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.products .product-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.products .product-item h4 {
+  margin: 1rem 0 0.5rem;
+  color: #3498db;
+}
+.products .product-item p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.products .product-item .product-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.products .product-item .product-button:hover {
+  background: #25a25a;
+}

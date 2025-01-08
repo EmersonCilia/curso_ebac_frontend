@@ -1,0 +1,65 @@
+@import "variaveis";
+@import "mixins";
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+
+  .product-item {
+    background: white;
+    .border-radius(10px);
+    .box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.1));
+    padding: 1rem;
+    text-align: center;
+    transition: transform @transicao, box-shadow @transicao;
+    max-width: 20%;
+
+    @media @breakpoint-tablet {
+      max-width: 40%;
+    }
+
+    @media @breakpoint-mobile {
+      max-width: none;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      .box-shadow(0, 6px, 10px, rgba(0, 0, 0, 0.15));
+    }
+
+    img {
+      max-width: 100%;
+      .border-radius(10px);
+    }
+
+    h4 {
+      margin: 1rem 0 0.5rem;
+      color: #colors[cor-primaria];
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #colors[cor-texto];
+      margin-bottom: 1rem;
+    }
+
+    .product-button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #colors[cor-secundaria];
+      color: white;
+      text-decoration: none;
+      .border-radius(5px);
+      font-weight: bold;
+      transition: @transicao;
+
+      &:hover {
+        background: darken(color(#colors[cor-secundaria]), 10%)
+      }
+    }
+  }
+}
