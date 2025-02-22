@@ -1,0 +1,75 @@
+@background-color: #f5f5f5;
+@calculadora-bg: #2e2e2e;
+@botao-bg: #4e4e4e;
+@botao-hover: #5e5e5e;
+@operador-bg: #f39c12;
+@operador-hover: #e67e22;
+@text-color: #fff;
+@display-bg: #1e1e1e;
+
+.calculadora {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: @calculadora-bg;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  background-color: @display-bg;
+  color: @text-color;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background-color: @botao-bg;
+  color: @text-color;
+  border: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: @botao-hover;
+  }
+}
+
+.operador {
+  background-color: @operador-bg;
+
+  &:hover {
+    background-color: @operador-hover;
+  }
+}
+
+#limpar {
+  background-color: #e74c3c;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+}
+
+.igual {
+  grid-column: span 4;
+  background-color: #27ae60;
+
+  &:hover {
+    background-color: #1e8449;
+  }
+}
